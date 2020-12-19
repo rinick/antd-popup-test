@@ -6,16 +6,30 @@
   <link rel="stylesheet" href="../node_modules/antd/dist/antd.css"/>
   <title>ant popup window</title>
   <style>
-    body {
-      position: absolute;
-    }
+      body {
+          position: absolute;
+          overflow: hidden;
+      }
 
-    .main {
-      margin: 16px;
-      min-width: 300px;
-      min-height: 300px;
-      box-sizing: border-box;
-    }
+      #app {
+          margin: 16px;
+          box-sizing: border-box;
+          position: relative;
+      }
+
+      .main {
+          padding: 16px;
+          box-sizing: border-box;
+      }
+
+      .main > * {
+          margin: 8px;
+      }
+
+      #app .main {
+          position: absolute;
+          box-shadow: inset 0 0 5px 1px black;
+      }
   </style>
 </head>
 <body>
