@@ -23,6 +23,6 @@
   "resolutions": {},
   "scripts": {
     "start": "parcel serve src/index.html --open --dist-dir temp --no-source-maps",
-    "build": "parcel build src/index.html --dist-dir docs"
+    "build": "parcel build src/index.html --dist-dir docs --public-url ."
   }
 }
